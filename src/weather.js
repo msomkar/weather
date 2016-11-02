@@ -7,7 +7,7 @@ $(document).ready(function(){
 		var cityName=$('#input1').val();
 		var days=$('#sel1').val();
 		// console.log(cityName);
-		var urlStr='http://api.openweathermap.org/data/2.5/forecast/daily?q='+cityName+',{country%20code}&cnt='+days+'&appid=27d43832d2a4adcb97fcbfa23db130aa';
+		var urlStr='http://api.openweathermap.org/data/2.5/forecast/daily?q='+cityName+'&cnt='+days+'&appid=27d43832d2a4adcb97fcbfa23db130aa';
 		console.log('Before calling Ajax');
 		$.ajax({
 		   url: urlStr,
@@ -39,7 +39,7 @@ $(document).ready(function(){
 		var cityName=$('#input1').val();
 
 		// console.log(cityName);
-		var urlStr='http://api.openweathermap.org/data/2.5/forecast/daily?q='+cityName+',{country%20code}&cnt={1}&appid=27d43832d2a4adcb97fcbfa23db130aa';
+		var urlStr='http://api.openweathermap.org/data/2.5/forecast/daily?q='+cityName+'&cnt={1}&appid=27d43832d2a4adcb97fcbfa23db130aa';
 		console.log('Before calling Ajax');
 		$.ajax({
 			 url: urlStr,
